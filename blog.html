@@ -73,8 +73,8 @@
           <div class="collapse-title text-xl font-medium">
             What is the Document Object Model (DOM)?
           </div>
-          <div class="collapse-content">
-            <p>hello</p>
+          <div class="collapse-content text-secondary">
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -82,8 +82,15 @@
           <div class="collapse-title text-xl font-medium">
             How do you select an element from the DOM?
           </div>
-          <div class="collapse-content">
-            <p>hello</p>
+          <div class="collapse-content text-secondary">
+            <p>To select elements from the DOM:</p><br>
+            <ul>
+              <li>By ID: document.getElementById('myId');</li>
+              <li>By Class: document.getElementsByClassName('myClass');</li>
+              <li>By Tag: document.getElementsByClassName('div');</li>
+              <li>By CSS Selector: document.querySelector('.myClass'); / document.querySelectorAll('.myClass');</li>
+              <li>By Name: document.getElementsByName('myElementName');</li>
+            </ul>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -92,8 +99,8 @@
             What is the event delegation in the context of the DOM, and why is
             it useful?
           </div>
-          <div class="collapse-content">
-            <p>hello</p>
+          <div class="collapse-content text-secondary">
+            <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -102,8 +109,30 @@
             How do you manipulate an element's attributes and styles using the
             DOM?
           </div>
-          <div class="collapse-content">
-            <p>hello</p>
+          <div class="collapse-content text-secondary">
+            <p>I can manipulate an element's attributes and styles using JavaScript by selecting the element and then using various properties and methods. Here's how to do it:</p><br>
+            <ul>
+              <li>Manipulating Attributes:
+                <ul>
+                  <li>Get an Attribute: element.getAttribute('attributeName');</li>
+                  <li>Set an Attribute: element.setAttribute('attributeName', 'value');</li>
+                  <li>Remove an Attribute: element.removeAttribute('attributeName');</li>
+                </ul>
+              </li><br>
+              <li>Manipulating Styles:
+                <ul>
+                  <li>Set Inline Styles: element.style.propertyName = 'value';</li>
+                  <li>Remove Inline Styles: element.style.propertyName = 'value';</li>
+                </ul>
+              </li><br>
+              <li>Adding/Removing CSS Classes:
+                <ul>
+                  <li>Add a Class: element.classList.add('className');</li>
+                  <li>Remove a Class: element.classList.remove('className');</li>
+                  <li>Toggle a Class: element.classList.toggle('className');</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
