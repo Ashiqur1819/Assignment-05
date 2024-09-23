@@ -4,13 +4,10 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
   const noakhaliBalance = getBalanceById("noakhali-balance");
   const mainBalance = getBalanceById("main-balance");
 
-  if (
-    isNaN(noakhaliInputValue) ||
-    noakhaliInputValue < 1 ||
-    noakhaliInputValue > mainBalance
-  ) {
-    alert("Invalid Donation Amount!");
-    return;
+  if (isNaN(noakhaliInputValue)) {
+    return alert("Invalid Donation Amount!");
+  }else if(!Number(noakhaliInputValue)){
+    return alert("Invalid Donation Amount!");
   }
 
   const newBalance = noakhaliBalance + noakhaliInputValue;

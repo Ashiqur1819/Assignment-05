@@ -24,7 +24,7 @@
   - Current donation amount.✅
   - Input field for donation amount.✅
   - Button for submitting the donation.✅
-- **History Section**: Initially hidden and empty.
+- **History Section**: Initially hidden and empty.✅
 
 ## Functionalities
 
