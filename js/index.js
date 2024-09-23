@@ -1,16 +1,14 @@
 // Donation for Noakhali
 document.getElementById("noakhali-btn").addEventListener("click", function () {
   const noakhaliInputValue = getInputValuById("noakhali-input");
-  const noakhaliBalance = getBalanceById("noakhali-balance");
-  const mainBalance = getBalanceById("main-balance");
+  const noakhaliBalance = parseFloat(getBalanceById("noakhali-balance"));
+  const mainBalance = parseFloat(getBalanceById("main-balance"));
 
-  if (isNaN(noakhaliInputValue)) {
-    return alert("Invalid Donation Amount!");
-  }else if(!Number(noakhaliInputValue)){
-    return alert("Invalid Donation Amount!");
-  }
+ if (noakhaliInputValue === "" || isNaN(noakhaliInputValue) || noakhaliInputValue <= 0 || noakhaliInputValue > mainBalance) {
+   return alert("Invalid Donation Amount");
+ }
 
-  const newBalance = noakhaliBalance + noakhaliInputValue;
+  const newBalance = noakhaliBalance + parseFloat(noakhaliInputValue);
   document.getElementById("noakhali-balance").innerText = newBalance;
 
   const remainingBalance = mainBalance - noakhaliInputValue;
@@ -35,15 +33,14 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
 // Donation for Feni
 document.getElementById("feni-btn").addEventListener("click", function () {
   const feniInputValue = getInputValuById("feni-input");
-  const feniBalance = getBalanceById("feni-balance");
-  const mainBalance = getBalanceById("main-balance");
+  const feniBalance = parseFloat(getBalanceById("feni-balance"));
+  const mainBalance = parseFloat(getBalanceById("main-balance"));
 
-  if (isNaN(feniInputValue)) {
-    alert("Invalid Donation Amount!");
-    return;
+  if (feniInputValue === "" || isNaN(feniInputValue) || feniInputValue <= 0 || feniInputValue > mainBalance) {
+    return alert("Invalid Donation Amount");
   }
 
-  const newBalance = feniBalance + feniInputValue;
+  const newBalance = feniBalance + parseFloat(feniInputValue);
   document.getElementById("feni-balance").innerText = newBalance;
 
   const remainingBalance = mainBalance - feniInputValue;
@@ -68,15 +65,14 @@ document.getElementById("feni-btn").addEventListener("click", function () {
 // Donate for Quota
 document.getElementById("quota-btn").addEventListener("click", function () {
   const quotaInputValue = getInputValuById("quota-input");
-  const quotaBalance = getBalanceById("quota-balance");
-  const mainBalance = getBalanceById("main-balance");
+  const quotaBalance = parseFloat(getBalanceById("quota-balance"));
+  const mainBalance = parseFloat(getBalanceById("main-balance"));
 
-  if (isNaN(quotaInputValue)) {
-    alert("Invalid Donation Amount!");
-    return;
+  if (quotaInputValue === "" || isNaN(quotaInputValue) || quotaInputValue <= 0 || quotaInputValue > mainBalance) {
+    return alert("Invalid Donation Amount");
   }
 
-  const newBalance = quotaBalance + quotaInputValue;
+  const newBalance = quotaBalance + parseFloat(quotaInputValue);
   document.getElementById("quota-balance").innerText = newBalance;
 
   const remainingBalance = mainBalance - quotaInputValue;
