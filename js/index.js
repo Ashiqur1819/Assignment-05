@@ -22,6 +22,9 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
   const historySection = document.getElementById("history-section");
   const noakhaliTitle = document.getElementById("noakhali-title").innerText;
 
+  const myModal = document.getElementById("my-modal");
+  myModal.showModal();
+
   const div = document.createElement("div");
   div.innerHTML = `
         <div class="border p-4 md:p-6 lg:p-8 rounded-lg mt-5">
@@ -52,6 +55,9 @@ document.getElementById("feni-btn").addEventListener("click", function () {
   const historySection = document.getElementById("history-section");
   const feniTitle = document.getElementById("feni-title").innerText;
 
+  const myModal = document.getElementById("my-modal");
+  myModal.showModal();
+
   const div = document.createElement("div");
   div.innerHTML = `
         <div class="border p-4 md:p-6 lg:p-8 rounded-lg mt-5">
@@ -81,6 +87,9 @@ document.getElementById("quota-btn").addEventListener("click", function () {
 
   const historySection = document.getElementById("history-section");
   const quotaTitle = document.getElementById("quota-title").innerText;
+
+  const myModal = document.getElementById("my-modal");
+  myModal.showModal();
 
   const div = document.createElement("div");
   div.innerHTML = `
