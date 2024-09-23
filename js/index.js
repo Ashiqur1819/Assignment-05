@@ -4,9 +4,9 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
   const noakhaliBalance = parseFloat(getBalanceById("noakhali-balance"));
   const mainBalance = parseFloat(getBalanceById("main-balance"));
 
- if (noakhaliInputValue === "" || isNaN(noakhaliInputValue) || noakhaliInputValue <= 0 || noakhaliInputValue > mainBalance) {
-   return alert("Invalid Donation Amount");
- }
+  if (noakhaliInputValue === "" || isNaN(noakhaliInputValue) || noakhaliInputValue <= 0 || noakhaliInputValue > mainBalance) {
+    return alert("Invalid Donation Amount");
+  }
 
   const newBalance = noakhaliBalance + parseFloat(noakhaliInputValue);
   document.getElementById("noakhali-balance").innerText = newBalance;
@@ -99,31 +99,11 @@ document.getElementById("donation-btn").addEventListener("click", function () {
   const historyBtn = document.getElementById("history-btn");
   const donationBtn = document.getElementById("donation-btn");
 
-  historyBtn.classList.remove(
-    "bg-primary",
-    "border-border",
-    "hover:bg-lime-400",
-    "text-primary"
-  );
-  historyBtn.classList.add(
-    "bg-gray-100",
-    "border-input",
-    "hover:bg-gray-200",
-    "text-secondary"
-  );
+  historyBtn.classList.remove("bg-primary", "border-border", "hover:bg-lime-400", "text-primary");
+  historyBtn.classList.add("bg-gray-100", "border-input", "hover:bg-gray-200", "text-secondary");
 
-  donationBtn.classList.add(
-    "bg-primary",
-    "border-border",
-    "hover:bg-lime-400",
-    "text-primary"
-  );
-  donationBtn.classList.remove(
-    "bg-gray-100",
-    "border-input",
-    "hover:bg-gray-200",
-    "text-secondary"
-  );
+  donationBtn.classList.add("bg-primary", "border-border", "hover:bg-lime-400", "text-primary");
+  donationBtn.classList.remove("bg-gray-100", "border-input", "hover:bg-gray-200", "text-secondary");
 
   const donationSection = document.getElementById("history-section");
   donationSection.classList.add("hidden");
@@ -140,31 +120,11 @@ document.getElementById("history-btn").addEventListener("click", function () {
   const historyBtn = document.getElementById("history-btn");
   const donationBtn = document.getElementById("donation-btn");
 
-  historyBtn.classList.add(
-    "bg-primary",
-    "border-border",
-    "hover:bg-lime-400",
-    "text-primary"
-  );
-  historyBtn.classList.remove(
-    "bg-gray-100",
-    "border-input",
-    "hover:bg-gray-200",
-    "text-secondary"
-  );
+  historyBtn.classList.add("bg-primary", "border-border", "hover:bg-lime-400", "text-primary");
+  historyBtn.classList.remove("bg-gray-100", "border-input", "hover:bg-gray-200", "text-secondary");
 
-  donationBtn.classList.remove(
-    "bg-primary",
-    "border-border",
-    "hover:bg-lime-400",
-    "text-primary"
-  );
-  donationBtn.classList.add(
-    "bg-gray-100",
-    "border-input",
-    "hover:bg-gray-200",
-    "text-secondary"
-  );
+  donationBtn.classList.remove("bg-primary", "border-border", "hover:bg-lime-400", "text-primary");
+  donationBtn.classList.add("bg-gray-100", "border-input", "hover:bg-gray-200", "text-secondary");
 
   const donationSection = document.getElementById("donation-section");
   donationSection.classList.add("hidden");
@@ -177,8 +137,6 @@ document.getElementById("history-btn").addEventListener("click", function () {
 });
 
 // Blog section
-const blog = document
-  .getElementById("blog-btn")
-  .addEventListener("click", function () {
+const blog = document.getElementById("blog-btn").addEventListener("click", function () {
     window.location.href = "blog.html";
-  });
+});
