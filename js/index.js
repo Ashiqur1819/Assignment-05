@@ -27,7 +27,7 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
           <p class="text-secondary">Date: ${new Date().toDateString()} ${new Date().toTimeString()}</p>
         </div>
   `;
-  historySection.appendChild(div);
+  historySection.prepend(div);
 });
 
 // Donation for Feni
@@ -59,7 +59,7 @@ document.getElementById("feni-btn").addEventListener("click", function () {
           <p class="text-secondary">Date: ${new Date().toDateString()} ${new Date().toTimeString()}</p>
         </div>
   `;
-  historySection.appendChild(div);
+  historySection.prepend(div);
 });
 
 // Donate for Quota
@@ -91,7 +91,7 @@ document.getElementById("quota-btn").addEventListener("click", function () {
           <p class="text-secondary">Date: ${new Date().toDateString()} ${new Date().toTimeString()}</p>
         </div>
   `;
-  historySection.appendChild(div);
+  historySection.prepend(div);
 });
 
 // Donation section
