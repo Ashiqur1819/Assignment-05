@@ -62,7 +62,7 @@ document.getElementById("feni-btn").addEventListener("click", function () {
   historySection.prepend(div);
 });
 
-// Donate for Quota
+// Donation for Quota
 document.getElementById("quota-btn").addEventListener("click", function () {
   const quotaInputValue = getInputValuById("quota-input");
   const quotaBalance = parseFloat(getBalanceById("quota-balance"));
@@ -94,7 +94,7 @@ document.getElementById("quota-btn").addEventListener("click", function () {
   historySection.prepend(div);
 });
 
-// Donation section
+// Donation section Button
 document.getElementById("donation-btn").addEventListener("click", function () {
   const historyBtn = document.getElementById("history-btn");
   const donationBtn = document.getElementById("donation-btn");
@@ -115,7 +115,7 @@ document.getElementById("donation-btn").addEventListener("click", function () {
   footer.classList.remove("hidden");
 });
 
-// History section
+// History section Button
 document.getElementById("history-btn").addEventListener("click", function () {
   const historyBtn = document.getElementById("history-btn");
   const donationBtn = document.getElementById("donation-btn");
@@ -136,7 +136,7 @@ document.getElementById("history-btn").addEventListener("click", function () {
   footer.classList.add("hidden");
 });
 
-// Blog section
+// Go blog section button
 const blog = document.getElementById("blog-btn").addEventListener("click", function () {
     window.location.href = "blog.html";
 });

@@ -29,7 +29,7 @@
             backgroundColor: {
               primary: "#B4F461",
               secondary: "#1111110D",
-              navbar: "#F9F7F3",
+              navbar: "#FFF9ED",
             },
             fontFamily: {
               lexend: "Lexend",
@@ -42,8 +42,8 @@
   </head>
   <body class="font-lexend">
     <!-- Header section starts here --> 
-    <header class="sticky top-0 backdrop-filter backdrop-blur-2xl bg-opacity-40">
-      <nav class="bg-navbar">
+    <header class="sticky top-0 bg-white backdrop-filter backdrop-blur-2xl bg-opacity-30">
+      <nav class="bg-navbar backdrop-filter backdrop-blur-2xl bg-opacity-70">
         <div class="navbar grid grid-cols-3 gap-4 max-w-screen-xl mx-auto px-3 md:px-4 lg:px-8 py-3 md:py-4 lg:py-6">
           <div class="navbar-start">
             <button id="blog-btn" class="bg-primary px-8 py-3 rounded-lg border border-border text-lg font-semibold hover:bg-lime-400">Blog</button>
@@ -62,9 +62,9 @@
         </div>
       </nav>
 
-      <div class="flex items-center justify-center bg-white gap-6 pt-8 pb-8 backdrop-filter backdrop-blur-2xl bg-opacity-30">
-        <button id="donation-btn" class="bg-primary text-primary px-8 py-3 rounded-lg border border-border text-lg font-semibold hover:bg-lime-400">Donation</button>
-        <button id="history-btn" class="bg-gray-100 px-8 py-3 rounded-lg border border-input text-lg font-semibold text-secondary hover:bg-gray-200">History</button>
+      <div class="flex items-center justify-center gap-6 pt-8 pb-8 backdrop-filter backdrop-blur-2xl bg-opacity-30">
+        <button id="donation-btn" class="bg-primary text-primary px-8 py-3 rounded-lg border border-border text-lg font-semibold hover:bg-lime-400 w-36">Donation</button>
+        <button id="history-btn" class="bg-gray-100 px-8 py-3 rounded-lg border border-input text-lg font-semibold text-secondary hover:bg-gray-200 w-36">History</button>
       </div>
     </header>
     <!-- Header section ends here -->
@@ -86,7 +86,7 @@
               </p>
               <h3 id="noakhali-title" class="text-xl font-bold my-4 text-primary">Donate for Flood at Noakhali, Bangladesh</h3>
               <p class="mb-6 text-secondary text-justify">Noakhali is currently experiencing severe flooding, which has led to thousands being displaced and in urgent need of assistance. Homes, crops, and infrastructure have been destroyed. Your donation can provide essential supplies such as food, water, medical aid, and shelter.
-              Your support will help the people of Noakhali rebuild their lives. Every contribution counts, so please donate today!</p>
+              Your support will help the people of Noakhali rebuild their lives. Every contribution counts, so please donate today.</p>
               <input id="noakhali-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-4 placeholder:text-input"/>
               <button id="noakhali-btn" class="bg-primary px-8 py-3 rounded-lg border border-border text-lg font-semibold w-full hover:bg-lime-400">Donate Now</button>
             </div>
